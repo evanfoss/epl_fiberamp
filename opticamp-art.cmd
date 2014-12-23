@@ -11,52 +11,16 @@ ChangePinName(CONN1, 1, 1)
 ChangePinName(CONN1, 4, 4)
 ChangePinName(CONN1, 2, 2)
 
-# Start of element C10
-ChangePinName(C10, 2, 2)
-ChangePinName(C10, 1, 1)
-
 # Start of element CONN4
 ChangePinName(CONN4, 5, 5)
 ChangePinName(CONN4, 3, 3)
 ChangePinName(CONN4, 1, 1)
 ChangePinName(CONN4, 4, 4)
 ChangePinName(CONN4, 2, 2)
-ChangePinName(CONN4, 7, 7)
-ChangePinName(CONN4, 5, 5)
-ChangePinName(CONN4, 3, 3)
-ChangePinName(CONN4, 1, 1)
-ChangePinName(CONN4, 8, 8)
-ChangePinName(CONN4, 6, 6)
-ChangePinName(CONN4, 4, 4)
-ChangePinName(CONN4, 2, 2)
 
-# Start of element CONN3
-ChangePinName(CONN3, 11, 11)
-ChangePinName(CONN3, 9, 9)
-ChangePinName(CONN3, 12, 12)
-ChangePinName(CONN3, 10, 10)
-ChangePinName(CONN3, 7, 7)
-ChangePinName(CONN3, 5, 5)
-ChangePinName(CONN3, 3, 3)
-ChangePinName(CONN3, 1, 1)
-ChangePinName(CONN3, 8, 8)
-ChangePinName(CONN3, 6, 6)
-ChangePinName(CONN3, 4, 4)
-ChangePinName(CONN3, 2, 2)
-
-# Start of element CONN2
-ChangePinName(CONN2, 11, 11)
-ChangePinName(CONN2, 9, 9)
-ChangePinName(CONN2, 12, 12)
-ChangePinName(CONN2, 10, 10)
-ChangePinName(CONN2, 7, 7)
-ChangePinName(CONN2, 5, 5)
-ChangePinName(CONN2, 3, 3)
-ChangePinName(CONN2, 1, 1)
-ChangePinName(CONN2, 8, 8)
-ChangePinName(CONN2, 6, 6)
-ChangePinName(CONN2, 4, 4)
-ChangePinName(CONN2, 2, 2)
+# Start of element C10
+ChangePinName(C10, 2, 2)
+ChangePinName(C10, 1, 1)
 
 # Start of element C?
 ChangePinName(C?, 2, 2)

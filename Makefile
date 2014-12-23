@@ -14,7 +14,7 @@
 #Project Name
 NAME = opticamp
 #Project Schematics
-SCHEMATICS = transimpedance.sch cabledrive.sch hidden-magic.sch
+SCHEMATICS = transimpedance.sch cabledrive.sch led.sch hidden-magic.sch hidden-magic-cbldrv.sch
 #Project Netlists
 NETLISTS = $(NAME).net
 #Project SPICE Simulation Data
@@ -28,11 +28,17 @@ SPICEGRAPH = $(NAME)SPICE.csv
 #Project Graphing Programs
 GRAPHCMDFILE_GNUPLOT = plot.gnu
 #Project Schematics to PCB File
-SCH2PCB = opticamp.prj
+SCH2PCB = opticamp-art.prj
 #Project Printed Circuit Boards
-PCBS = opticamp.pcb
+PCBS = opticamp-art.pcb
 #Project Gerbers
-GERBERS = $(NAME).fab.gbr $(NAME).plated-drill.cnc $(NAME).frontsilk.gbr $(NAME).front.gbr $(NAME).frontmask.gbr $(NAME).back.gbr  $(NAME).backmask.gbr
+GERBERS = $(NAME)-art.fab.gbr $(NAME)-art.plated-drill.cnc $(NAME)-art.frontsilk.gbr $(NAME)-art.front.gbr $(NAME)-art.frontmask.gbr $(NAME)-art.back.gbr  $(NAME)-art.backmask.gbr
+
+SCHEMATICS1 = transimpedance.sch led.sch hidden-magic.sch
+
+SCHEMATICS2 = cabledrive.sch hidden-magic-cbldrv.sch
+SCH2PCB2 = outputamp-art.prj
+PCB2 = outputamp-art.pcb
 
 #
 ## Text Editor
@@ -84,7 +90,7 @@ change:
 	$(SCHTOOL) $(SCHFLAGS)  $(SCHEMATICS)
 
 simulation:
-	$(NETTOOL) $(NETFLAGS) $(NETLISTS) $(SCHEMATICS)
+	$(NETTOOL) $(NETFLAGS) $(NETLISTS) $(SCHEMATICS1) $(SCHEMATICS2)
 	cat $(NETLISTS)
 	$(SIMTOOL) $(SIMFLAGS) $(NETLISTS) -o $(SPICEDATA)
 	./stripper.pl > $(SPICEGRAPH)
@@ -104,17 +110,21 @@ pcb:    sch2pcb
 gerbv:
 	$(PCBVIEW) $(PCBVIEWFLAGS) $(GERBERS)
 
+pcb2:
+	sch2pcb
+	$(PCBTOOL) $(PCBS2)
+
 bom:
 	$(BOMTOOL) $(BOMFLAGS) $(PCBS)
 
 alberta:
-	mv $(NAME).frontsilk.gbr cslk.gbr
-	mv $(NAME).front.gbr compont.gbr
-	mv $(NAME).frontmask.gbr cmsk.gbr
-	mv $(NAME).back.gbr solder.gbr
-	mv $(NAME).backmask.gbr smsk.gbr
-	mv $(NAME).plated-drill.cnc drill.cnc
-	rm $(NAME).fab.gbr $(NAME).frontpaste.gbr 
+	mv $(NAME)-art.frontsilk.gbr cslk.gbr
+	mv $(NAME)-art.front.gbr compont.gbr
+	mv $(NAME)-art.frontmask.gbr cmsk.gbr
+	mv $(NAME)-art.back.gbr solder.gbr
+	mv $(NAME)-art.backmask.gbr smsk.gbr
+	mv $(NAME)-art.plated-drill.cnc drill.cnc
+	rm $(NAME)-art.fab.gbr $(NAME)-art.frontpaste.gbr 
 	zip -jk $(NAME).zip *.gbr drill.cnc ascorder.txt READ.ME
 	echo "Do not forget to change the ascorder.txt and READ.ME"
 

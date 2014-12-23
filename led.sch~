@@ -226,9 +226,3 @@ N 51000 46000 51000 46200 4
 N 51000 46200 50500 46200 4
 N 50500 46200 50500 44900 4
 N 50500 44900 51400 44900 4
-T 53000 45000 9 10 1 0 0 0 5
-LED100 forward current is to be between 10mA and 100mA. 
-Given how we tend to use this it the level should be 100mA. 
-Normally I don't keep it that high but they list the test 
-conditions at 100mA so it must be safe.
--EEF 2014.12.23
