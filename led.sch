@@ -232,3 +232,15 @@ Given how we tend to use this it the level should be 100mA.
 Normally I don't keep it that high but they list the test 
 conditions at 100mA so it must be safe.
 -EEF 2014.12.23
+T 55000 40700 9 8 1 0 0 0 1
+LED and Current Source
+T 58900 40100 9 8 1 0 0 0 1
+Evan Foss
+T 58800 40400 9 8 1 0 0 0 1
+2014.12.24
+T 54900 40400 9 8 1 0 0 0 1
+led.sch
+T 56500 40100 9 8 1 0 0 0 1
+5
+T 55000 40100 9 8 1 0 0 0 1
+3
