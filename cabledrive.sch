@@ -388,7 +388,7 @@ device=BNC
 T 59600 51900 5 10 1 1 0 6 1
 refdes=CONN2
 T 59600 51700 5 10 1 1 0 6 1
-footprint=HEADER2_1
+footprint=molex-22-23-2021-mini_2_vert.fp
 }
 C 59400 49900 1 0 0 gnd-1.sym
 N 59500 50200 59500 51000 4
@@ -409,7 +409,7 @@ device=BNC
 T 59600 44900 5 10 1 1 0 6 1
 refdes=CONN3
 T 59600 44700 5 10 1 1 0 6 1
-footprint=HEADER2_1
+footprint=molex-22-23-2021-mini_2_vert.fp
 }
 C 59400 42900 1 0 0 gnd-1.sym
 N 59500 43200 59500 44000 4
