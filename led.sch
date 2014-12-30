@@ -29,23 +29,6 @@ description=ceramic
 T 47200 47400 5 10 1 1 0 6 1
 footprint=1210
 }
-C 49900 51800 1 0 1 capacitor-1.sym
-{
-T 49700 52500 5 10 0 0 0 6 1
-device=CAPACITOR
-T 49700 52700 5 10 0 0 0 6 1
-symversion=0.1
-T 49400 53100 5 10 1 1 0 3 1
-refdes=C104
-T 49400 52900 5 10 1 1 0 3 1
-value=1uF
-T 49400 52300 5 10 1 1 0 3 1
-footprint=ACY400
-T 49400 52500 5 10 1 1 0 3 1
-description=Metal Film
-T 49400 52700 5 10 1 1 0 3 1
-comment=EF1105
-}
 C 50200 47300 1 90 0 resistor-1.sym
 {
 T 49800 47600 5 10 0 0 90 0 1
@@ -107,11 +90,9 @@ T 52700 50700 5 10 1 1 0 6 1
 footprint=1210
 }
 N 53000 51500 53000 52000 4
-N 49900 52000 55000 52000 4
+N 50500 52000 55000 52000 4
 N 53000 50600 53000 46500 4
 N 51400 47300 51400 46500 4
-N 49000 52000 48500 52000 4
-N 48500 52000 48500 51200 4
 C 54700 49100 1 90 0 capacitor-1.sym
 {
 T 54000 49300 5 10 0 0 90 0 1
@@ -141,7 +122,6 @@ value=1K
 }
 N 54500 48200 54500 49100 4
 N 54500 47300 54500 46500 4
-C 48400 50900 1 0 0 gnd-1.sym
 C 55900 51800 1 0 1 capacitor-1.sym
 {
 T 55700 52500 5 10 0 0 0 6 1
@@ -151,7 +131,7 @@ symversion=0.1
 T 55400 53100 5 10 1 1 0 3 1
 refdes=C103
 T 55400 52900 5 10 1 1 0 3 1
-value=0.1uF
+value=1uF
 T 55400 52300 5 10 1 1 0 3 1
 footprint=ACY400
 T 55400 52500 5 10 1 1 0 3 1
@@ -192,7 +172,7 @@ device=CAPACITOR
 T 55700 54500 5 10 0 0 0 6 1
 symversion=0.1
 T 55400 54900 5 10 1 1 0 3 1
-refdes=C?
+refdes=C104
 T 55400 54700 5 10 1 1 0 3 1
 value=0.1uF
 T 55400 54100 5 10 1 1 0 3 1
@@ -216,7 +196,7 @@ footprint=HFE4854.fp
 N 51000 46000 51000 46200 4
 N 51000 46200 50000 46200 4
 N 50000 46200 50000 44700 4
-T 53000 45000 9 10 1 0 0 0 5
+T 52000 45500 9 10 1 0 0 2 5
 LED100 forward current is to be between 10mA and 100mA. 
 Given how we tend to use this it the level should be 100mA. 
 Normally I don't keep it that high but they list the test 

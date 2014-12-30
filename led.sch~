@@ -8,7 +8,7 @@ T 51500 50995 5 10 1 1 0 6 1
 footprint=SOT223
 T 51500 51195 5 10 1 1 0 6 1
 device=LT3092
-T 49400 50300 5 10 1 1 0 6 4
+T 49400 49600 5 10 1 1 0 6 4
 comment=Note: U100 pin 4 is the SOT223 Solder Tab.
 U100 is rated to 200mA and the temp curve for it 
 appears to show that 100mA should be a small 
