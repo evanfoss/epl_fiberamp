@@ -439,8 +439,10 @@ C 53500 47800 1 0 0 connector5-1.sym
 {
 T 55300 49300 5 10 0 0 0 0 1
 device=CONNECTOR_5
-T 53600 49500 5 10 1 1 0 0 1
-refdes=CONN6
+T 53500 49700 5 10 1 1 0 0 1
+refdes=CONN5
+T 53500 49500 5 10 1 1 0 0 1
+footprint=molex-22-05-3051-mini_5_ra
 }
 N 55600 48900 55600 47700 4
 C 56800 48400 1 0 0 chassis.sym
