@@ -174,7 +174,7 @@ symversion=0.1
 T 55400 54900 5 10 1 1 0 3 1
 refdes=C104
 T 55400 54700 5 10 1 1 0 3 1
-value=0.1uF
+value=100nF
 T 55400 54100 5 10 1 1 0 3 1
 footprint=ACY400
 T 55400 54300 5 10 1 1 0 3 1
@@ -219,3 +219,5 @@ C 49800 44400 1 0 0 chassis.sym
 T 50100 44600 5 10 1 1 0 0 1
 netname=CHASSIS:1
 }
+T 43100 53500 9 10 1 0 0 0 1
+Note: LED1 forward voltage is 1.85V typically and 2.2V maximum. This is part of what sets R104.
