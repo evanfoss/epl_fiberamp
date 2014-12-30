@@ -184,7 +184,7 @@ device=CONNECTOR_5
 T 55000 48800 5 10 1 1 0 6 1
 refdes=CONN5
 T 55000 48600 5 10 1 1 0 6 1
-footprint=molex-22-05-3051-mini_5_ra
+footprint=molex-22-23-2051-mini_5_vert
 }
 N 52900 48000 52900 46700 4
 C 51700 47400 1 0 1 chassis.sym

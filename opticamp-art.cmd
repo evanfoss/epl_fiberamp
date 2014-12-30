@@ -1,38 +1,13 @@
 # Pin name action command file
 
-# Start of element C11
-ChangePinName(C11, 2, 2)
-ChangePinName(C11, 1, 1)
-
-# Start of element CONN1
-ChangePinName(CONN1, 5, 5)
-ChangePinName(CONN1, 3, 3)
-ChangePinName(CONN1, 1, 1)
-ChangePinName(CONN1, 4, 4)
-ChangePinName(CONN1, 2, 2)
-
-# Start of element CONN4
-ChangePinName(CONN4, 5, 5)
-ChangePinName(CONN4, 3, 3)
-ChangePinName(CONN4, 1, 1)
-ChangePinName(CONN4, 4, 4)
-ChangePinName(CONN4, 2, 2)
-
-# Start of element C10
-ChangePinName(C10, 2, 2)
-ChangePinName(C10, 1, 1)
-
-# Start of element C?
-ChangePinName(C?, 2, 2)
-ChangePinName(C?, 1, 1)
-
-# Start of element R?
-ChangePinName(R?, 1, 1)
-ChangePinName(R?, 2, 2)
-
 # Start of element LED100
-ChangePinName(LED100, 2, K)
-ChangePinName(LED100, 1, A)
+ChangePinName(LED100, 3, 3)
+ChangePinName(LED100, 2, 2)
+ChangePinName(LED100, 1, 1)
+
+# Start of element C104
+ChangePinName(C104, 2, 2)
+ChangePinName(C104, 1, 1)
 
 # Start of element R104
 ChangePinName(R104, 1, 1)
@@ -42,9 +17,9 @@ ChangePinName(R104, 2, 2)
 ChangePinName(C103, 2, 2)
 ChangePinName(C103, 1, 1)
 
-# Start of element T103
-ChangePinName(T103, 1, 1)
-ChangePinName(T103, 2, 2)
+# Start of element R103
+ChangePinName(R103, 1, 1)
+ChangePinName(R103, 2, 2)
 
 # Start of element C102
 ChangePinName(C102, 2, 2)
@@ -66,10 +41,6 @@ ChangePinName(R102, 2, 2)
 ChangePinName(R101, 1, 1)
 ChangePinName(R101, 2, 2)
 
-# Start of element C104
-ChangePinName(C104, 2, 2)
-ChangePinName(C104, 1, 1)
-
 # Start of element C100
 ChangePinName(C100, 2, 2)
 ChangePinName(C100, 1, 1)
@@ -81,14 +52,15 @@ ChangePinName(U100, 2, OUT)
 ChangePinName(U100, 1, SET)
 
 # Start of element CONN5
-ChangePinName(CONN5, 7, 7)
 ChangePinName(CONN5, 5, 5)
 ChangePinName(CONN5, 3, 3)
 ChangePinName(CONN5, 1, 1)
-ChangePinName(CONN5, 8, 8)
-ChangePinName(CONN5, 6, 6)
 ChangePinName(CONN5, 4, 4)
 ChangePinName(CONN5, 2, 2)
+
+# Start of element C5
+ChangePinName(C5, 2, 2)
+ChangePinName(C5, 1, 1)
 
 # Start of element C4
 ChangePinName(C4, 2, 2)

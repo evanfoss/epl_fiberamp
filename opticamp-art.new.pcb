@@ -10,40 +10,23 @@ DRC[1000 1000 1000 1000 1500 1000]
 Flags("nameonpcb,uniquename,clearnew,snappin")
 Groups("1,c:2:3:4:5:6,s:7:8")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
-Element(0x00 "JUMPER5" "CONN4" "126-220" 0 0 3 100 0x00)
+
+Element["" "molex-22-23-2051-mini_5_vert" "CONN5" "unknown" 0 0 -8000 -19000 0 100 ""]
 (
-	Pin(50 50 60 38 "1" 0x101)
-	 Pin(50 150 60 38 "2" 0x01)
-	 Pin(50 250 60 38 "3" 0x01)
-	 Pin(50 350 60 38 "4" 0x01)
-	 Pin(50 450 60 38 "5" 0x01)
-	ElementLine(0 0 0 500 10)
-	ElementLine(0 500 100 500 10)
-	ElementLine(100 500 100 0 10)
-	ElementLine(100 0 0 0 10)
-	ElementLine(0 100 100 100 10)
-	ElementLine(100 100 100 0 10)
-	Mark(50 50)
-)
-Element(0x00 "JUMPER9" "CONN5" "unknown" 0 0 3 100 0x00)
-(
-	Pin(50 50 60 38 "1" 0x101)
-	 Pin(50 150 60 38 "2" 0x01)
-	 Pin(50 250 60 38 "3" 0x01)
-	 Pin(50 350 60 38 "4" 0x01)
-	 Pin(50 450 60 38 "5" 0x01)
-	 Pin(50 550 60 38 "6" 0x01)
-	 Pin(50 650 60 38 "7" 0x01)
-	 Pin(50 750 60 38 "8" 0x01)
-	 Pin(50 850 60 38 "9" 0x01)
-	ElementLine(0 0 0 900 10)
-	ElementLine(0 900 100 900 10)
-	ElementLine(100 900 100 0 10)
-	ElementLine(100 0 0 0 10)
-	ElementLine(0 100 100 100 10)
-	ElementLine(100 100 100 0 10)
-	Mark(50 50)
-)
+	Pin[-20000 0 8000 2000 8600 4000 "" "1" "square,edge2"]
+	Pin[-10000 0 8000 2000 8600 4000 "" "2" "edge2"]
+	Pin[0 0 8000 2000 8600 4000 "" "3" "edge2"]
+	Pin[10000 0 8000 2000 8600 4000 "" "4" "edge2"]
+	Pin[20000 0 8000 2000 8600 4000 "" "5" "edge2"]
+	ElementLine [-25000 12800 25000 12800 1000]
+	ElementLine [-25000 -12200 25000 -12200 1000]
+	ElementLine [-20000 -6200 -20000 -12200 1000]
+	ElementLine [-20000 -6200 20000 -6200 1000]
+	ElementLine [20000 -6200 20000 -12200 1000]
+	ElementLine [-25000 -12200 -25000 12800 1000]
+	ElementLine [25000 -12200 25000 12800 1000]
+
+	)
 Layer(1 "top")
 (
 )
