@@ -1,0 +1,4 @@
+elements-dir ./foot
+schematics cabledrive.sch  hidden-magic-cbldrv.sch
+output-name outputamp-art
+gsch2pcb:use-m4:            yes

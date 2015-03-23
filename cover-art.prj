@@ -1,0 +1,4 @@
+elements-dir ./foot
+schematics cover.sch
+output-name cover-art
+gsch2pcb:use-m4:            yes

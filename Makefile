@@ -14,7 +14,7 @@
 #Project Name
 NAME = opticamp
 #Project Schematics
-SCHEMATICS = transimpedance.sch cabledrive.sch led.sch hidden-magic.sch hidden-magic-cbldrv.sch
+SCHEMATICS = transimpedance.sch cabledrive.sch led.sch hidden-magic.sch hidden-magic-cbldrv.sch cover.sch
 #Project Netlists
 NETLISTS = $(NAME).net
 #Project SPICE Simulation Data
@@ -39,6 +39,10 @@ SCHEMATICS1 = transimpedance.sch led.sch hidden-magic.sch
 SCHEMATICS2 = cabledrive.sch hidden-magic-cbldrv.sch
 SCH2PCB2 = outputamp-art.prj
 PCB2 = outputamp-art.pcb
+
+SCHEMATICS3 = cover.sch
+SCH2PCB3 = cover-art.prj
+PCB3 = cover-art.pcb
 
 #
 ## Text Editor
@@ -110,9 +114,17 @@ pcb:    sch2pcb
 gerbv:
 	$(PCBVIEW) $(PCBVIEWFLAGS) $(GERBERS)
 
-pcb2:
-	sch2pcb
-	$(PCBTOOL) $(PCBS2)
+sch2pcb2:
+	$(SCH2PCBTOOL) $(SCH2PCB2)
+
+pcb2:	sch2pcb2
+	$(PCBTOOL) $(PCB2)
+
+sch2pcb3:
+	$(SCH2PCBTOOL) $(SCH2PCB3)
+
+pcb3:   sch2pcb3
+	$(PCBTOOL) $(PCB3)
 
 bom:
 	$(BOMTOOL) $(BOMFLAGS) $(PCBS)

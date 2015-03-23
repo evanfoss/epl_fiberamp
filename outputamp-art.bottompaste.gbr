@@ -1,0 +1,17 @@
+G04 start of page 10 for group -4014 idx -4014 *
+G04 Title: (unknown), bottompaste *
+G04 Creator: pcb 20140316 *
+G04 CreationDate: Tue 10 Mar 2015 03:41:28 PM GMT UTC *
+G04 For: fosse *
+G04 Format: Gerber/RS-274X *
+G04 PCB-Dimensions (mil): 1600.00 3000.00 *
+G04 PCB-Coordinate-Origin: lower left *
+%MOIN*%
+%FSLAX25Y25*%
+%LNBOTTOMPASTE*%
+%ADD57R,0.0512X0.0512*%
+G54D57*X97457Y212393D02*Y211607D01*
+X104543Y212393D02*Y211607D01*
+X97457Y253393D02*Y252607D01*
+X104543Y253393D02*Y252607D01*
+M02*
