@@ -1,0 +1,17 @@
+# PcbBOM Version 1.0
+# Date: Tue 24 Mar 2015 03:34:20 PM GMT UTC
+# Author: 
+# Title: (unknown) - PCB BOM
+# Quantity, Description, Value, RefDes
+# --------------------------------------------
+3,"1210","2.2uF",C8 C15 C16 
+2,"0805","5K",R3 R4 
+2,"NICHICON_WT_CAP_8_5p4","10uF",C14 C13 
+1,"molex-22-23-2041-mini_4_vert.fp","unknown",CONN4 
+1,"molex-22-23-2051-mini_5_vert.fp","unknown",CONN5 
+6,"1206","100nF",C3 C5 C10 C6 C7 C9 
+2,"SO8","LF356",U2 U3 
+2,"1206","100",R5 R8 
+1,"0805","6.65K",R7 
+1,"0805","1K",R6 
+2,"AMPHENOL_BNC_31-5431-ver2.fp","unknown",CONN3 CONN2 

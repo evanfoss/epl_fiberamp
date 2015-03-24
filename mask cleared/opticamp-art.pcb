@@ -1353,6 +1353,10 @@ Layer(2 "solder")
 )
 Layer(3 "outline")
 (
+	Line[50.00mil 40.00mil 1160.00mil 40.00mil 20.00mil 20.00mil "clearline"]
+	Line[1160.00mil 40.00mil 1160.00mil 2050.00mil 20.00mil 20.00mil "clearline"]
+	Line[1160.00mil 2050.00mil 50.00mil 2050.00mil 20.00mil 20.00mil "clearline"]
+	Line[50.00mil 2050.00mil 50.00mil 40.00mil 20.00mil 20.00mil "clearline"]
 )
 Layer(4 "silk")
 (
