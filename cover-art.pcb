@@ -1042,6 +1042,11 @@ Layer(5 "silk")
 )
 Layer(6 "silk")
 (
+	Text[475.00mil 1580.00mil 0 100 "2015.03.03" "clearline"]
+	Text[475.00mil 1370.00mil 0 100 "Fiberoptic Microphone Amplifier" "clearline"]
+	Text[475.00mil 1440.00mil 0 100 "Cover" "clearline"]
+	Text[475.00mil 1510.00mil 0 100 "Evan Foss" "clearline"]
+	Text[475.00mil 1650.00mil 0 100 "Eaton Peabody Lab" "clearline"]
 )
 NetList()
 (
