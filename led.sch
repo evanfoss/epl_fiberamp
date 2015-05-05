@@ -208,7 +208,7 @@ device=photodiode
 T 51500 45600 5 10 1 1 0 0 1
 refdes=LED100
 T 51500 45400 5 10 1 1 0 0 1
-footprint=HFE4854.fp
+footprint=HFE4854-v2.fp
 }
 T 52000 45200 9 10 1 0 0 2 5
 LED100 forward current is to be between 10mA and 100mA. 
