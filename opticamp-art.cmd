@@ -62,6 +62,16 @@ ChangePinName(U100, 3, IN)
 ChangePinName(U100, 2, OUT)
 ChangePinName(U100, 1, SET)
 
+# Start of element U1
+ChangePinName(U1, 8, V-)
+ChangePinName(U1, 4, N.C.)
+ChangePinName(U1, 1, N.C.)
+ChangePinName(U1, 5, V-)
+ChangePinName(U1, 7, V+)
+ChangePinName(U1, 6, out)
+ChangePinName(U1, 2, in-)
+ChangePinName(U1, 3, in+)
+
 # Start of element D1
 ChangePinName(D1, 3, 3)
 ChangePinName(D1, 2, 2)
@@ -140,15 +150,6 @@ ChangePinName(C5, 1, 1)
 # Start of element C4
 ChangePinName(C4, 2, 2)
 ChangePinName(C4, 1, 1)
-
-# Start of element U1
-ChangePinName(U1, 5, Trim+)
-ChangePinName(U1, 1, Trim+)
-ChangePinName(U1, 4, V-)
-ChangePinName(U1, 7, V+)
-ChangePinName(U1, 6, out)
-ChangePinName(U1, 2, in-)
-ChangePinName(U1, 3, in+)
 
 # Start of element C2
 ChangePinName(C2, 2, 2)
