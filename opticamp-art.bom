@@ -1,0 +1,28 @@
+# $Id$
+# PcbBOM Version 1.0
+# Date: Sat 16 Jul 2016 12:11:28 AM GMT UTC
+# Author: 
+# Title: (unknown) - PCB BOM
+# Quantity, Description, Value, RefDes
+# --------------------------------------------
+1,"SOT223","unknown",U100 
+4,"1206","100nF",C100 C102 C104 C101 
+1,"1206","1uF",C103 
+1,"1206","50",R104 
+1,"1206","1K",R103 
+1,"0805","100K",R102 
+1,"0805","20K",R101 
+1,"1206","2",R100 
+2,"JUMPER20","unknown",J5 J4 
+3,"JUMPER9","unknown",J1 J2 J3 
+1,"SO8","LT1793",U1 
+1,"OPF482-v2","TEMD6xxx",D1 
+2,"0805","10",R21 R22 
+1,"SMD_SIMPLE-120-60","0.01uF",C22 
+1,"1206","499K",R1 
+1,"1206","1pF",C1 
+1,"TSOT-23.fp","unknown",VREG22 
+2,"0805","10uF",C24 C23 
+4,"0805","100nF",C6 C5 C4 C2 
+1,"0805","2.2uF",C21 
+1,"HFE4854-v2.fp","unknown",LED100 

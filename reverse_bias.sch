@@ -5,7 +5,7 @@ N 48300 46500 52000 46500 4
 T 50300 46500 5 10 1 1 0 3 1
 netname=+5Vout
 }
-N 49800 45900 49800 46500 4
+N 50000 45900 50000 46500 4
 {
 T 50000 46400 5 10 1 1 0 2 1
 netname=+5Vout
@@ -15,19 +15,19 @@ N 51000 45900 51000 46500 4
 T 51000 46200 5 10 1 1 0 0 1
 netname=+5Vout
 }
-C 49600 45900 1 270 0 capacitor-1.sym
+C 49800 45900 1 270 0 capacitor-1.sym
 {
-T 50300 45700 5 10 0 0 270 0 1
-device=CAPACITOR
 T 50500 45700 5 10 0 0 270 0 1
+device=CAPACITOR
+T 50700 45700 5 10 0 0 270 0 1
 symversion=0.1
-T 49600 45900 5 10 0 1 180 0 1
+T 49800 45900 5 10 0 1 180 0 1
 footprint=SMD_SIMPLE 120 60
-T 49600 45900 5 10 0 1 180 0 1
+T 49800 45900 5 10 0 1 180 0 1
 model=C3216C0G1E103J
-T 49500 45400 5 10 1 1 0 6 1
+T 49700 45400 5 10 1 1 0 6 1
 refdes=C22
-T 49700 45200 5 10 1 1 0 6 1
+T 49900 45200 5 10 1 1 0 6 1
 value=0.01uF
 }
 C 50800 45000 1 270 1 capacitor-2.sym
@@ -64,8 +64,8 @@ comment=Tantalum
 }
 N 48300 45500 49000 45500 4
 N 49000 45500 49000 44500 4
-N 49000 44500 49800 44500 4
-N 49800 44500 49800 45000 4
+N 49000 44500 50000 44500 4
+N 50000 44500 50000 45000 4
 N 44000 46500 46100 46500 4
 N 44000 46100 44000 47000 4
 N 46100 45500 44500 45500 4
@@ -154,21 +154,3 @@ N 51000 43500 51000 42900 4
 N 46100 46000 45500 46000 4
 N 45500 46000 45500 43500 4
 C 51100 42600 1 0 1 gnd-1.sym
-T 50000 40700 9 8 1 0 0 0 1
-Reverse Bias Voltage Source
-T 53900 40100 9 8 1 0 0 0 1
-Evan Foss
-T 53800 40400 9 8 1 0 0 0 1
-2015.09.31
-T 49900 40400 9 8 1 0 0 0 1
-reverse_bias.sch
-T 51500 40100 9 8 1 0 0 0 1
-6
-T 50000 40100 9 8 1 0 0 0 1
-fixme
-T 42000 42000 9 14 1 0 0 0 5
-This page is totally left out of this version of the design. It does not appear 
-on the artwork. It was used in one prototype but that was a line of thought 
-that was abandoned after testing showed no signs of improvement 
-compared to the simpler version you see now.
--EEF 2016.06.07

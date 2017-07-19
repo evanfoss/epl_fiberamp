@@ -20,7 +20,7 @@ refdes=C100
 T 46200 47800 5 10 1 1 0 6 1
 value=100nF
 T 46200 47600 5 10 1 1 0 6 1
-description=metal film
+description=ceramic
 T 46200 47400 5 10 1 1 0 6 1
 footprint=1206
 }
@@ -145,14 +145,16 @@ T 55700 52500 5 10 0 0 0 6 1
 device=CAPACITOR
 T 55700 52700 5 10 0 0 0 6 1
 symversion=0.1
-T 55400 52900 5 10 1 1 0 3 1
+T 55400 53100 5 10 1 1 0 3 1
 refdes=C103
-T 55400 52700 5 10 1 1 0 3 1
-value=100nF
+T 55400 52900 5 10 1 1 0 3 1
+value=1uF
 T 55400 52300 5 10 1 1 0 3 1
 footprint=1206
 T 55400 52500 5 10 1 1 0 3 1
-description=ceramic
+description=Metal Film
+T 55400 52700 5 10 1 1 0 3 1
+comment=tbd
 }
 C 56400 50900 1 0 0 gnd-1.sym
 N 55900 52000 56500 52000 4
@@ -186,14 +188,16 @@ T 55700 54300 5 10 0 0 0 6 1
 device=CAPACITOR
 T 55700 54500 5 10 0 0 0 6 1
 symversion=0.1
-T 55400 54700 5 10 1 1 0 3 1
+T 55400 54900 5 10 1 1 0 3 1
 refdes=C104
-T 55400 54500 5 10 1 1 0 3 1
+T 55400 54700 5 10 1 1 0 3 1
 value=100nF
 T 55400 54100 5 10 1 1 0 3 1
 footprint=1206
 T 55400 54300 5 10 1 1 0 3 1
-description=ceramic
+description=Metal Film
+T 55400 54500 5 10 1 1 0 3 1
+comment=tbd
 }
 N 55000 53800 53000 53800 4
 N 55900 53800 56500 53800 4
@@ -208,7 +212,7 @@ footprint=HFE4854-v2.fp
 }
 T 52000 45200 9 10 1 0 0 2 5
 LED100 forward current is to be between 10mA and 100mA. 
-Given how we tend to use this it, the level should be 100mA. 
+Given how we tend to use this it the level should be 100mA. 
 Normally I don't keep it that high but they list the test 
 conditions at 100mA so it must be safe.
 -EEF 2014.12.23
@@ -270,58 +274,3 @@ C 57200 50100 1 180 0 generic-power.sym
 T 57000 49850 5 10 1 1 180 3 1
 net=N15V:1
 }
-N 49500 45600 49500 46500 4
-C 49700 45600 1 90 1 capacitor-2.sym
-{
-T 49000 45400 5 10 0 0 270 2 1
-device=POLARIZED_CAPACITOR
-T 48800 45400 5 10 0 0 270 2 1
-symversion=0.1
-T 49200 45000 5 10 1 1 0 6 1
-footprint=0805
-T 49200 45400 5 10 1 1 0 6 1
-refdes=C105
-T 49200 45200 5 10 1 1 0 6 1
-value=2.2uF
-T 49200 44800 5 10 1 1 0 6 1
-comment=Tantalum
-}
-N 49500 44700 49500 44400 4
-N 49500 44400 51400 44400 4
-T 49500 44400 9 10 1 0 0 8 5
-C105 was a late addition tacked directly 
-onto the leads of LED100 to reduce noise.
-Testing was done with out C105 and found 
-that it does infact reduce noise significantly.
--EEF 2016.06.07
-T 52000 42900 9 10 1 0 0 0 4
-LED100 has a chassis pin which is unused because I screw LED100 to the 
-chassis front panel and to avoid ground loops the only location where 
-ground should contact the case is at the photodiode.
--EEF 2016.06.07
-T 52000 41500 9 10 1 0 0 0 5
-LED100 will experiance some temperature rise which will cause increased 
-noise. To limit this I applied heat sink compound between it and the front 
-panel which is aluminium. The idea is to use the front panel as a heatsink.
-I tried touching the panel and the LED during testing. It works as intended.
--EEF 2016.06.07
-T 45300 51300 9 10 1 0 0 0 6
-U100 uses the PCB for part of it's heat dissipation 
-to that end some area on the PCB was allocated.
-I gave it vias with exposed copper (no solder 
-mask) on each side to lower thermal resistance 
-with the surrounding air.
--EEF 2016.06.07
-T 55300 47800 9 10 1 0 0 0 4
-C101 was a bad idea. I don't know why I put it here. I never even tested 
-it. C101 causes excessive inrush current that could damage LED100. 
-C102 was a better idea in that it has R103 to limit the starting current.
--EEF 2016.06.07
-T 56100 55000 9 10 1 0 0 0 7
-I wired the LED drivers power to J3 instead of directly over to the 
-transimpedance amplifiers power connector so that they could 
-be tested independently. At the time I thought having a 
-complete faraday cage around the LED and driver to be a good 
-idea. Later I realized that it was both unnessisary and obstructive 
-to heat dissipation.
--EEF 2016.06.07
