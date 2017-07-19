@@ -1,0 +1,17 @@
+G04 start of page 4 for group 2 idx 2 *
+G04 Title: (unknown), outline *
+G04 Creator: pcb 20140316 *
+G04 CreationDate: Mon 16 Nov 2015 12:26:51 PM GMT UTC *
+G04 For: fosse *
+G04 Format: Gerber/RS-274X *
+G04 PCB-Dimensions (mil): 1250.00 2150.00 *
+G04 PCB-Coordinate-Origin: lower left *
+%MOIN*%
+%FSLAX25Y25*%
+%LNOUTLINE*%
+%ADD38C,0.0200*%
+G54D38*X5000Y211000D02*X116000D01*
+Y10000D01*
+X5000D01*
+Y211000D01*
+M02*

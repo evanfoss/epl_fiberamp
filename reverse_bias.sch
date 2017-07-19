@@ -1,0 +1,174 @@
+v 20130925 2
+C 40000 40000 0 0 0 title-B.sym
+N 48300 46500 52000 46500 4
+{
+T 50300 46500 5 10 1 1 0 3 1
+netname=+5Vout
+}
+N 49800 45900 49800 46500 4
+{
+T 50000 46400 5 10 1 1 0 2 1
+netname=+5Vout
+}
+N 51000 45900 51000 46500 4
+{
+T 51000 46200 5 10 1 1 0 0 1
+netname=+5Vout
+}
+C 49600 45900 1 270 0 capacitor-1.sym
+{
+T 50300 45700 5 10 0 0 270 0 1
+device=CAPACITOR
+T 50500 45700 5 10 0 0 270 0 1
+symversion=0.1
+T 49600 45900 5 10 0 1 180 0 1
+footprint=SMD_SIMPLE 120 60
+T 49600 45900 5 10 0 1 180 0 1
+model=C3216C0G1E103J
+T 49500 45400 5 10 1 1 0 6 1
+refdes=C22
+T 49700 45200 5 10 1 1 0 6 1
+value=0.01uF
+}
+C 50800 45000 1 270 1 capacitor-2.sym
+{
+T 51500 45200 5 10 0 0 90 2 1
+device=POLARIZED_CAPACITOR
+T 51700 45200 5 10 0 0 90 2 1
+symversion=0.1
+T 50800 45000 5 10 0 1 180 6 1
+footprint=0805
+T 50700 45800 5 10 0 1 180 0 1
+model-name=B45194E6106K409
+T 50700 45400 5 10 1 1 180 0 1
+refdes=C23
+T 50700 45600 5 10 1 1 180 0 1
+value=10uF
+T 50700 45800 5 10 1 1 180 0 1
+comment=Tantalum
+}
+C 44200 46100 1 90 1 capacitor-2.sym
+{
+T 43500 45900 5 10 0 0 270 2 1
+device=POLARIZED_CAPACITOR
+T 43300 45900 5 10 0 0 270 2 1
+symversion=0.1
+T 44200 46100 5 10 0 1 0 6 1
+footprint=0805
+T 43700 45700 5 10 1 1 0 6 1
+refdes=C21
+T 43700 45500 5 10 1 1 0 6 1
+value=2.2uF
+T 43700 45300 5 10 1 1 0 6 1
+comment=Tantalum
+}
+N 48300 45500 49000 45500 4
+N 49000 45500 49000 44500 4
+N 49000 44500 49800 44500 4
+N 49800 44500 49800 45000 4
+N 44000 46500 46100 46500 4
+N 44000 46100 44000 47000 4
+N 46100 45500 44500 45500 4
+N 44500 45500 44500 46500 4
+C 46100 45200 1 0 0 LT1761-5-1.sym
+{
+T 47300 45000 5 10 0 1 0 0 1
+model-name=LT1761-5
+T 46500 46900 5 10 1 1 0 0 1
+footprint=TSOT-23.fp
+T 46495 47100 5 10 1 1 0 0 1
+refdes=VREG22
+}
+C 54500 46400 1 0 0 output-2.sym
+{
+T 55400 46500 5 10 0 1 0 1 1
+net=VBIAS:1
+T 54700 47100 5 10 0 0 0 0 1
+device=none
+T 55400 46500 5 10 0 1 0 1 1
+value=OUTPUT
+T 55400 46500 5 10 1 1 0 1 1
+comment=VBIAS
+}
+T 44900 48100 9 10 1 0 0 0 2
+Note: The ESR of the output capacitors C7 & C11 on VREG2,VREG4 must have an ESR < 3 Ohms 
+to prevent them from oscillating. The total output capacitence should not exceed 10uF.
+T 44900 47700 9 10 1 0 0 0 2
+Note: VREG4 \_SHDN\_ really 
+does go to -Vin.
+C 54200 45900 1 90 1 capacitor-2.sym
+{
+T 53500 45700 5 10 0 0 270 2 1
+device=POLARIZED_CAPACITOR
+T 53300 45700 5 10 0 0 270 2 1
+symversion=0.1
+T 54200 45900 5 10 0 1 0 6 1
+footprint=0805
+T 54300 45100 5 10 0 1 0 0 1
+model-name=B45194E6106K409
+T 54300 45500 5 10 1 1 0 0 1
+refdes=C24
+T 54300 45300 5 10 1 1 0 0 1
+value=10uF
+T 54300 45100 5 10 1 1 0 0 1
+comment=Tantalum
+}
+N 54000 45900 54000 46500 4
+N 54500 46500 52900 46500 4
+C 52000 46400 1 0 0 resistor-1.sym
+{
+T 52300 46800 5 10 0 0 0 0 1
+device=RESISTOR
+T 52400 46900 5 10 1 1 0 6 1
+refdes=R21
+T 52500 46700 5 10 1 1 0 3 1
+footprint=0805
+T 52600 46900 5 10 1 1 0 0 1
+value=10
+}
+C 44100 47000 1 90 0 resistor-1.sym
+{
+T 43700 47300 5 10 0 0 90 0 1
+device=RESISTOR
+T 43600 47400 5 10 1 1 90 6 1
+refdes=R22
+T 43800 47500 5 10 1 1 90 3 1
+footprint=0805
+T 43600 47600 5 10 1 1 90 0 1
+value=10
+}
+N 44000 47900 44000 48500 4
+C 44200 48500 1 0 1 generic-power.sym
+{
+T 44000 48750 5 10 1 1 0 3 1
+net=P15V:1
+}
+N 51700 46500 51700 47500 4
+N 51700 47500 53200 47500 4
+N 53200 47500 53200 46500 4
+N 44000 45200 44000 43500 4
+N 44000 43500 54000 43500 4
+N 54000 43500 54000 45000 4
+N 51000 45000 51000 43500 4
+N 51000 43500 51000 42900 4
+N 46100 46000 45500 46000 4
+N 45500 46000 45500 43500 4
+C 51100 42600 1 0 1 gnd-1.sym
+T 50000 40700 9 8 1 0 0 0 1
+Reverse Bias Voltage Source
+T 53900 40100 9 8 1 0 0 0 1
+Evan Foss
+T 53800 40400 9 8 1 0 0 0 1
+2015.09.31
+T 49900 40400 9 8 1 0 0 0 1
+reverse_bias.sch
+T 51500 40100 9 8 1 0 0 0 1
+6
+T 50000 40100 9 8 1 0 0 0 1
+fixme
+T 42000 42000 9 14 1 0 0 0 5
+This page is totally left out of this version of the design. It does not appear 
+on the artwork. It was used in one prototype but that was a line of thought 
+that was abandoned after testing showed no signs of improvement 
+compared to the simpler version you see now.
+-EEF 2016.06.07

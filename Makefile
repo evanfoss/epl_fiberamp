@@ -14,7 +14,7 @@
 #Project Name
 NAME = opticamp
 #Project Schematics
-SCHEMATICS = transimpedance.sch cabledrive.sch led.sch hidden-magic.sch hidden-magic-cbldrv.sch cover.sch
+SCHEMATICS = transimpedance.sch cabledrive.sch reverse_bias.sch led.sch hidden-magic.sch hidden-magic-cbldrv.sch cover.sch
 #Project Netlists
 NETLISTS = $(NAME).net
 #Project SPICE Simulation Data
@@ -34,7 +34,7 @@ PCBS = opticamp-art.pcb
 #Project Gerbers
 GERBERS = $(NAME)-art.fab.gbr $(NAME)-art.plated-drill.cnc $(NAME)-art.frontsilk.gbr $(NAME)-art.front.gbr $(NAME)-art.frontmask.gbr $(NAME)-art.back.gbr  $(NAME)-art.backmask.gbr
 
-SCHEMATICS1 = transimpedance.sch led.sch hidden-magic.sch
+SCHEMATICS1 = transimpedance.sch led.sch reverse_bias.sch hidden-magic.sch
 
 SCHEMATICS2 = cabledrive.sch hidden-magic-cbldrv.sch
 SCH2PCB2 = outputamp-art.prj
@@ -74,10 +74,10 @@ GRAPHTOOL_GNUPLOT = gnuplot
 GRAPHFLAGS_GNUPLOT = -persist
 #
 ## Schematic to PCB Tool
-SCH2PCBTOOL = gsch2pcb
+SCH2PCBTOOL = gsch2pcb-rnd
 # 
 ## PCB Tool
-PCBTOOL = pcb
+PCBTOOL = pcb-rnd
 #
 ## Gerber Viewer
 PCBVIEW = gerbv

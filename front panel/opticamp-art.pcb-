@@ -849,6 +849,7 @@ Via[1035.50mil 3379.20mil 24.02mil 12.00mil 0.0000 20.00mil "" ""]
 Via[34.4817mm 3379.20mil 24.02mil 12.00mil 0.0000 20.00mil "" ""]
 Via[1035.50mil 4379.20mil 24.02mil 12.00mil 0.0000 20.00mil "" ""]
 Via[34.4817mm 4379.20mil 24.02mil 12.00mil 0.0000 20.00mil "" ""]
+Via[1220.50mil 3879.20mil 36.00mil 20.00mil 0.0000 20.00mil "" ""]
 
 Element["onsolder" "OPF482" "D1" "TEMD6xxx" 2710.00mil 2294.00mil 320.00mil 35.00mil 3 100 "auto"]
 (
@@ -1832,6 +1833,11 @@ Layer(1 "component")
 	Line[4403.20mil 937.90mil 4403.20mil 859.90mil 0.01mil 12.00mil "clearline"]
 	Line[3763.20mil 749.90mil 3537.70mil 749.90mil 0.01mil 12.00mil "clearline"]
 	Line[117.8103mm 749.90mil 4863.70mil 749.90mil 0.01mil 12.00mil "clearline"]
+	Line[34.4817mm 3379.20mil 34.4817mm 4379.20mil 0.01mil 12.00mil "clearline"]
+	Line[34.4817mm 4379.20mil 34.4938mm 111.2438mm 0.01mil 12.00mil "clearline"]
+	Line[221.00mil 3879.20mil 2044.00mil 3879.20mil 0.01mil 12.00mil "clearline"]
+	Line[1264.00mil 3835.70mil 1181.50mil 3918.20mil 20.00mil 20.00mil "clearline"]
+	Line[1254.90mil 3913.60mil 1193.50mil 3852.20mil 20.00mil 20.00mil "clearline"]
 	Polygon("clearpoly")
 	(
 		[2100.00mil 1074.00mil] [3350.00mil 1074.00mil] [3350.00mil 2064.00mil] [2100.00mil 2064.00mil] 

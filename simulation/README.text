@@ -1,0 +1,1 @@
+I modified the OPA627E.MOD file. It came from TI but it needed to be converted to ASCII and to have the carrage return marks changed from windows. I also removed the weird end of file charater from the end of the file.

@@ -1,0 +1,5 @@
+
+
+A = csvread("f129.txt")
+print A
+
