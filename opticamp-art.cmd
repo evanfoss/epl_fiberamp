@@ -1,9 +1,5 @@
 # Pin name action command file
 
-# Start of element C105
-ChangePinName(C105, 2, -)
-ChangePinName(C105, 1, +)
-
 # Start of element J3
 ChangePinName(J3, 9, 9)
 ChangePinName(J3, 7, 7)

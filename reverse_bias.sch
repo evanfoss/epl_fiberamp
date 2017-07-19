@@ -166,9 +166,3 @@ T 51500 40100 9 8 1 0 0 0 1
 6
 T 50000 40100 9 8 1 0 0 0 1
 fixme
-T 42000 42000 9 14 1 0 0 0 5
-This page is totally left out of this version of the design. It does not appear 
-on the artwork. It was used in one prototype but that was a line of thought 
-that was abandoned after testing showed no signs of improvement 
-compared to the simpler version you see now.
--EEF 2016.06.07

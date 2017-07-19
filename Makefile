@@ -74,10 +74,10 @@ GRAPHTOOL_GNUPLOT = gnuplot
 GRAPHFLAGS_GNUPLOT = -persist
 #
 ## Schematic to PCB Tool
-SCH2PCBTOOL = gsch2pcb-rnd
+SCH2PCBTOOL = gsch2pcb
 # 
 ## PCB Tool
-PCBTOOL = pcb-rnd
+PCBTOOL = pcb
 #
 ## Gerber Viewer
 PCBVIEW = gerbv

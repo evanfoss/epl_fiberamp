@@ -852,7 +852,7 @@ Element["" "1206" "C102" "100nF" 940.00mil 975.00mil -56.50mil -106.50mil 0 100 
 
 	)
 
-Element["" "1206" "C103" "100nF" 280.00mil 405.00mil -56.50mil -106.50mil 0 100 ""]
+Element["" "1206" "C103" "1uF" 280.00mil 405.00mil -56.50mil -106.50mil 0 100 ""]
 (
 	Pad[-59.05mil -11.81mil -59.05mil 11.81mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
 	Pad[59.05mil -11.81mil 59.05mil 11.81mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
