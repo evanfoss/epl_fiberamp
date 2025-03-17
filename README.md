@@ -62,7 +62,21 @@ A partial simulation of the device was created to see how the integrators would 
 
 ### Grounding
 
+## PCB Layouts
 
+<a href="opticamp-art.png"><img src="opticamp-art.png"></a>
+
+<a href="cover-art.png"><img src="cover-art.png"></a>
+
+<a href="outputamp-art.png"><img src="outputamp-art.png"></a>
+
+## Packaging and Construction
+
+The device was designed to fit in the standard subrack enclosure with the following front panel. The limited space on the front panel meant there was no room for an on/off switch unfortunately. 
+
+|<a href=""><img src=""></a>
+|:-----------------
+|Pic1: Image of the front of the completed device sitting on it's side.
 
 ## Future
 
