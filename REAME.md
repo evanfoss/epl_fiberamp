@@ -26,6 +26,8 @@ The development toolchain was as follows:
 
 ## Circuit Design
 
+### Grounding
+
 
 
 ## Future
@@ -44,8 +46,14 @@ All future work on this device should really be around:
 2. Altering the optics to just be a coated fiber without the added splitter and it's two cables
 3. Retailoring the transimpedance source to the bandwidth required for an LDV frontend
 4. Using a more cohearant source of light
+5. Adopting the grounding plan I introduced in the BioAmp where the devices in the subrack only use an RC bridge between analog common and chassis instead of the short between them currently in use.
+6. An on/off switch so the user can swap sensors without turning the subrack power on and off.
 
-Of these goals I believe 1, 2, & 3 are easily possible with minor modifications but 4 might be an issue. The problem I have is that a lot of fiber coupled LED/Photodiode pairs I find are not clear on if the part is using a laser diode or just an LED. I suspect many of the LEDs are actually "cohearent enough" for our purposes.
+Of these goals I believe 1, 2, 3, 5, and 6 are easily possible with minor modifications but 4 might be an issue. The problem I have is that a lot of fiber coupled LED/Photodiode pairs I find are not clear on if the part is using a laser diode or just an LED. I suspect many of the LEDs are actually "cohearent enough" for our purposes.
 
 All this said after I left EPL it is my understanding that they switched to a commercially made device. So all this is just being documented for future refrence.
+
+### A minor note about tools
+
+The PCB layout for the device required a number of features including removing soldermask from around some traces that was at the time not a feature of the PCB design software (gEDA/PCB now defunct). This and other features are now standard in PCB-RND and much easier to use. So migration there would be an advantage. 
 
