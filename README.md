@@ -24,15 +24,19 @@ Part way into the process the project was canceled, later it was uncanceled. Thi
 
 The development toolchain was as follows:
 
-|Tool Name             | License        | Function
-|:---------------      | :------------- | :-----------------
-|<a href="https://octave.org/">Octave</a>                                                    | Open Source       | Scientific Programming Language used for calculations
+|Tool Name                                                                                   | License           | Function
+|:---------------                                                                            | :-------------    | :-----------------
+|<a href="https://www.sagemath.org//">SageMath</a>                                           | Open Source       | Online Mathematics Software
 |<a href="https://github.com/lepton-eda/lepton-eda">lepton-eda</a>                           | Open Source       | EDA (Electronic Design Automation) suite lepton-eda a fork of gEDA
+|<a href="https://ngspice.sourceforge.io/">ng-spice</a>                                      | Open Source       | Circuit Simulator
 |<a href="http://repo.hu/projects/pcb-rnd/">pcb-rnd</a>                                      | Open Source       | CAD (Computer Aided Design) tool for PCB (Printed Circuit Board) layout gEDA/PCB
 |<a href="https://gerbv.github.io/">gerbv</a>                                                | Open Source       | Gerber viewer
 |<a href="https://www.gnu.org/software/make/">GNU/Make</a>                                   | Open Source       | Toolchain automation
 |<a href="https://www.frontpanelexpress.com/front-panel-designer">Front Panel Designer</a>   | Free as in Beer   | Front Panels Express Software
 
+Sadly all my SageMath entries for this project appear lost. I believe a SageMath server refresh some years ago took them out. 
+
+A partial simulation of the device was created to see how the integrators would behave. It is in the "simulation" directory. I had intended I think to add more to simulate the reverse bias and other ideas but there is so much about the sensor that would need to be characterized for that. All that measurement would basically be just as time consuming and expensive as building a few versions and testing them which was contentious with this projects PI.
 
 ## Circuit Design
 
@@ -48,22 +52,13 @@ The development toolchain was as follows:
 |:-----------------
 |Sch1: cover.sch
 
-|<a href="hidden-magic.png"><img src="hidden-magic.png"></a>
-|:-----------------
-|Sch1: hidden-magic.sch
-
 |<a href="cabledrive.png"><img src="cabledrive.png"></a>
 |:-----------------
 |Sch1: cabledrive.sch
 
-|<a href="hidden-magic-cbldrv.png"><img src="hidden-magic-cbldrv.png"></a>
-|:-----------------
-|Sch1: hidden-magic-cbldrv.sch
-
 |<a href="reverse_bias.png"><img src="reverse_bias.png"></a>
 |:-----------------
 |Sch1: reverse_bias.sch
-
 
 ### Grounding
 
