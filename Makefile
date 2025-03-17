@@ -53,7 +53,7 @@ MATHTOOL = sage
 MATHFLAGS = 
 #
 ## Schematic Capture
-SCHTOOL = gschem
+SCHTOOL = lepton-schematic
 SCHFLAGS = -q
 #
 ## Schematic Library
