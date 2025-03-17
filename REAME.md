@@ -18,6 +18,7 @@ Part way into the process the project was canceled, later it was uncanceled. Thi
 |:---------------           |:---------------           |:---------------       |:---------------
 |Infrasound Measurement     | Yes                       | No                    | The 1/f noise etc of the amplifiers made this notion crazy once more there was serious doubt from the team making the sensors that they were responding at that scale
 |Reverse Bias on photodiode | Yes                       | Yes                   | This had no obvious effect on THD+N and was abandoned
+|Alternatives for 1st stage opamp| Yes                  | No                    | I had drawn up early versions with a few alternative opamps for that first stage because it was unclear on paper which would perform better
 
 ## Toolchain
 
