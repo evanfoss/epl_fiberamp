@@ -10,7 +10,16 @@ Note: Those of you more aware of physics might want to skip to the section at th
 
 Most frequently along the auditory path of cadaver ears. The sensor was a fiberoptic line with a thin gold coating deposited onto it's end viaan evaporation process. The original concept was proved by Lisa Olsen's team earlier. The electronics for this were however started with a clean sheet by Evan Foss. The reasoning was simple, the original design and a revised update from EPL earlier were very old and both had seen numerous itterations that added amplifier stages haphazardly. There was also the issue of stability. The earlier EPL update was about 15 years old at least and it was known for periodically becoming unstable and self oscillating for unknown reasons.
 
-### Toolchain
+### Alternate Versions and Experiments
+
+Part way into the process the project was canceled, later it was uncanceled. This happened a few times. Along the way other features were requested and canceled.
+
+|Feature or Concept         | Designed                  | Tested                | Observations
+|:---------------           |:---------------           |:---------------       |:---------------
+|Infrasound Measurement     | Yes                       | No                    | The 1/f noise etc of the amplifiers made this notion crazy once more there was serious doubt from the team making the sensors that they were responding at that scale
+|Reverse Bias on photodiode | Yes                       | Yes                   | This had no obvious effect on THD+N and was abandoned
+
+## Toolchain
 
 The development toolchain was as follows:
 
@@ -25,6 +34,35 @@ The development toolchain was as follows:
 
 
 ## Circuit Design
+
+|<a href="led.png"><img src="led.png"></a>
+|:-----------------
+|Sch1: led.sch
+
+|<a href="transimpedance.png"><img src="transimpedance.png"></a>
+|:-----------------
+|Sch2: transimpedance.sch
+
+|<a href="cover.png"><img src="cover.png"></a>
+|:-----------------
+|Sch1: cover.sch
+
+|<a href="hidden-magic.png"><img src="hidden-magic.png"></a>
+|:-----------------
+|Sch1: hidden-magic.sch
+
+|<a href="cabledrive.png"><img src="cabledrive.png"></a>
+|:-----------------
+|Sch1: cabledrive.sch
+
+|<a href="hidden-magic-cbldrv.png"><img src="hidden-magic-cbldrv.png"></a>
+|:-----------------
+|Sch1: hidden-magic-cbldrv.sch
+
+|<a href="reverse_bias.png"><img src="reverse_bias.png"></a>
+|:-----------------
+|Sch1: reverse_bias.sch
+
 
 ### Grounding
 
