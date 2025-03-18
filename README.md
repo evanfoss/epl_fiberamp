@@ -68,7 +68,7 @@ A partial simulation of the device was created to see how the integrators would 
 
 <a href="cover-art.png"><img src="cover-art.png"></a>
 
-<a href="outputamp-art.png"><img src="outputamp-art.png"></a>
+<a href="photos/outputamp-art.png"><img src="photos/outputamp-art.png"></a>
 
 ## Packaging and Construction
 
