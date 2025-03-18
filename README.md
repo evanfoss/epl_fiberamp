@@ -44,21 +44,29 @@ A partial simulation of the device was created to see how the integrators would 
 |:-----------------
 |Sch1: led.sch
 
+Sch1 shows the light source for the project. LED100 is the lightsource. The U100 is a constant current source. R104 and C103 attenuate ripples in the power supply and it lowers the amount of power dissipated in U100 and it limits the initial current through C105. R100 is a current shunt. R101 sets the current and C100 reduces the noise R101 contributes. Likewise C105 reduces noise and limits power on current through LED100. 
+
 |<a href="transimpedance.png"><img src="transimpedance.png"></a>
 |:-----------------
 |Sch2: transimpedance.sch
 
+Sch2 was based on the previous work I did for the <a href="https://github.com/evanfoss/epl_photometer">EPL Photometer</a>. The operation is basically the same. Light comes in and is converted to a current by D1. That current goes into a transimpedance amplifier built out of U1. R1 sets the conversion factor from current to voltage. C1 limits the frequency response and the value is tuned per unit for optimate performance. That said at this high of a current ratio it's value is going to be extrodinarily small.
+
 |<a href="cover.png"><img src="cover.png"></a>
 |:-----------------
-|Sch1: cover.sch
+|Sch3: cover.sch
+
+Because Sch1 and Sch2 are in a small subassembly that is off on a cable the back cover (Sch3) has some capacitors for power supply decoupling. The back cover is also there for a very important reason, transimpedance amplifiers are very sensitive to noise. Their input impedance and the output impedance of the photodiode are very low. So the whole assembly has a metal shield around it made with this cover.
 
 |<a href="cabledrive.png"><img src="cabledrive.png"></a>
 |:-----------------
-|Sch1: cabledrive.sch
+|Sch4: cabledrive.sch
+
+
 
 |<a href="reverse_bias.png"><img src="reverse_bias.png"></a>
 |:-----------------
-|Sch1: reverse_bias.sch
+|Sch5: reverse_bias.sch
 
 ### Grounding
 
