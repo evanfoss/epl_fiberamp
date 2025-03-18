@@ -8,7 +8,7 @@ Note: Those of you more aware of physics might want to skip to the section at th
 
 ## Development
 
-Most frequently along the auditory path of cadaver ears. The sensor was a fiberoptic line with a thin gold coating deposited onto it's end viaan evaporation process. The original concept was proved by Lisa Olsen's team earlier. The electronics for this were however started with a clean sheet by Evan Foss. The reasoning was simple, the original design and a revised update from EPL earlier were very old and both had seen numerous itterations that added amplifier stages haphazardly. There was also the issue of stability. The earlier EPL update was about 15 years old at least and it was known for periodically becoming unstable and self oscillating for unknown reasons.
+Most frequently along the auditory path of cadaver ears. The sensor was a fiberoptic line with a thin gold coating deposited onto it's end viaan evaporation process. The original concept was proved by Lisa Olsen's team earlier. The electronics for this were however started with a clean sheet by Evan Foss and the DC filter network from the earlier EPL revision by Ishmael S. W. The reasoning was simple, the original design and a revised update from EPL earlier were very old and both had seen numerous itterations that added amplifier stages haphazardly. There was also the issue of stability. The earlier EPL update was about 15 years old at least and it was known for periodically becoming unstable and self oscillating for unknown reasons.
 
 ### Alternate Versions and Experiments
 
@@ -62,13 +62,21 @@ Because Sch1 and Sch2 are in a small subassembly that is off on a cable the back
 |:-----------------
 |Sch4: cabledrive.sch
 
+Sch4 has a lot going on. The signal comes in as "SMALL" and is AC Coupled into a gain stage built around U4 with two settings (gain 200/gain 2K) set by S1. The output of this stage goes to two more stages.
 
+The two following stages on the AC coupled path are a cable driver that operates at unity gain made of U3. (This was later changed to add another gain of 10.) The other stage this goes to is an optional integrator for providing an offset to feed back into U4. Earlier versions of this device also used this integrator's output for the DC coupled output. I liked this as it enabled much lower frequency response.
+
+The DC coupled output is built around the RC filter network made of R3, R4, C15, C16. This RC filter was a carry forward from Ishmael's earlier revision of the device. The output of the filter is made stable for driving the cables out of the chamber by U2 which is another amplifier set for unity gain.
 
 |<a href="reverse_bias.png"><img src="reverse_bias.png"></a>
 |:-----------------
 |Sch5: reverse_bias.sch
 
+Sch5 was something that didn't make the cut into the final device. It was used to provide a voltage source to apply to the bottom of D1 in Sch1. I am including it here so that if someone wants to know how this was built and tested they can see. VREG22 was selected for it's low noise in the frequencies we are concerned with.
+
 ### Grounding
+
+Going back to Sch1 there is something worth paying attention too at the botton of D1. The chassis of D1 and the analog common are interconnected. The chassis of D1 had to be at analog common to prevent chassis ground from injecting noise into the transimpedance amplifier but we couldn't have users touching something at analog common that wasn't also tied to proper chassis ground so they had to be connected here. If I had it to do over again this would probably be the same low impedance bridge described in the <a href="https://github.com/evanfoss/eef_bioamp">EEF_BioAmp</a> that originated in the <a href="https://github.com/EPL-Engineering/epl_bioamp">EPL BioAmp</a> it was forked from.
 
 ## PCB Layouts
 
