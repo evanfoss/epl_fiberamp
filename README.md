@@ -102,8 +102,8 @@ The device was designed to fit in the standard subrack enclosure with the follow
 
 Pic1 shows one of the completed units front panel. The switch for more/less gain was requested by users later in the design and I was not allowed to redo the front panel so dymo labels were applied later.
 
-|<a href="photo/p1010518_25815803855_o.jpg"><img src="photo/p1010518_25815803855_o.jpg"></a>
-|<a href="photo/p1010519_25748068211_o.jpg"><img src="photo/p1010519_25748068211_o.jpg"></a>
+|<a href="photos/p1010518_25815803855_o.jpg"><img src="photos/p1010518_25815803855_o.jpg"></a>
+|<a href="photos/p1010519_25748068211_o.jpg"><img src="photos/p1010519_25748068211_o.jpg"></a>
 |:-----------------
 |Pic2 & Pic3: Images of the front panel assembly with all 3 PCBAs in place.
 
@@ -111,7 +111,7 @@ Pic1 shows one of the completed units front panel. The switch for more/less gain
 |:-----------------
 |Pic4: Image of the back of the opticamp-art board. The front just has the photodiode and LED on it in their ST mount packages. Note the leads on the LED were left long for testing and trimmed later.
 
-|<a href="photo/p1010511_25515124970_o.jpg"><img src="photo/p1010511_25515124970_o.jpg"></a>
+|<a href="photos/p1010511_25515124970_o.jpg"><img src="photos/p1010511_25515124970_o.jpg"></a>
 |:-----------------
 |Pic5: Image of the rear cover removed showing how the connectors on the side form a shield.
 
