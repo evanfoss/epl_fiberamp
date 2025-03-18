@@ -80,11 +80,17 @@ Going back to Sch1 there is something worth paying attention too at the botton o
 
 ## PCB Layouts
 
-<a href="opticamp-art.png"><img src="opticamp-art.png"></a>
+|<a href="opticamp-art.png"><img src="opticamp-art.png"></a>
+|:-----------------
+|PCB1: This is an rendering from the gerber viewer of the opticamp-art pcb. Note the PCB heatsink and routes meant to isolate the most sensitive route near the transimpedance amplifier.
 
-<a href="cover-art.png"><img src="cover-art.png"></a>
+|<a href="cover-art.png"><img src="cover-art.png"></a>
+|:-----------------
+|PCB2: This is a rendering from the gerber viewer of the back cover.
 
-<a href="photos/outputamp-art.png"><img src="photos/outputamp-art.png"></a>
+|<a href="photos/outputamp-art.png"><img src="photos/outputamp-art.png"></a>
+|:-----------------
+|PCB3: This is a render from the gerber viewer of the output amplifier PCB.
 
 ## Packaging and Construction
 
