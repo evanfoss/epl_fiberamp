@@ -90,9 +90,30 @@ Going back to Sch1 there is something worth paying attention too at the botton o
 
 The device was designed to fit in the standard subrack enclosure with the following front panel. The limited space on the front panel meant there was no room for an on/off switch unfortunately. 
 
-|<a href=""><img src=""></a>
+|<a href="photos/p1010521_25542472200_o.jpg"><img src="photos/p1010521_25542472200_o.jpg"></a>
 |:-----------------
 |Pic1: Image of the front of the completed device sitting on it's side.
+
+Pic1 shows one of the completed units front panel. The switch for more/less gain was requested by users later in the design and I was not allowed to redo the front panel so dymo labels were applied later.
+
+|<a href="photo/p1010518_25815803855_o.jpg"><img src="photo/p1010518_25815803855_o.jpg"></a>
+|<a href="photo/p1010519_25748068211_o.jpg"><img src="photo/p1010519_25748068211_o.jpg"></a>
+|:-----------------
+|Pic2 & Pic3: Images of the front panel assembly with all 3 PCBAs in place.
+
+|<a href="photos/p1010516_25815803575_o.jpg"><img src="photos/p1010516_25815803575_o.jpg"></a>
+|:-----------------
+|Pic4: Image of the back of the opticamp-art board. The front just has the photodiode and LED on it in their ST mount packages. Note the leads on the LED were left long for testing and trimmed later.
+
+|<a href="photo/p1010511_25515124970_o.jpg"><img src="photo/p1010511_25515124970_o.jpg"></a>
+|:-----------------
+|Pic5: Image of the rear cover removed showing how the connectors on the side form a shield.
+
+|<a href="photos/p1010509_25815802385_o.jpg"><img src="photos/p1010509_25815802385_o.jpg"></a>
+|<a href="photos/p1010523_25542472690_o.jpg"><img src="photos/p1010523_25542472690_o.jpg"></a>
+|:-----------------
+|Pic6 & Pic7: Images of the top and bottom of the output board.
+
 
 ## Future
 
