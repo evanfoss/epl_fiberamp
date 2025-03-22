@@ -34,7 +34,9 @@ The development toolchain was as follows:
 |<a href="https://www.gnu.org/software/make/">GNU/Make</a>                                   | Open Source       | Toolchain automation
 |<a href="https://www.frontpanelexpress.com/front-panel-designer">Front Panel Designer</a>   | Free as in Beer   | Front Panels Express Software
 
-Sadly all my SageMath entries for this project appear lost. I believe a SageMath server refresh some years ago took them out. 
+Sadly all my SageMath entries for this project appear lost. I believe a SageMath server refresh some years ago took them out.
+
+The PCB layout was originally done in gEDA/PCB which I believe is defunct. Thankfully pcb-rnd which forked from that project is still fully backward compatible to it.
 
 A partial simulation of the device was created to see how the integrators would behave. It is in the "simulation" directory. I had intended I think to add more to simulate the reverse bias and other ideas but there is so much about the sensor that would need to be characterized for that. All that measurement would basically be just as time consuming and expensive as building a few versions and testing them which was contentious with this projects PI.
 
@@ -126,6 +128,9 @@ Pic1 shows one of the completed units front panel. The switch for more/less gain
 |:-----------------
 |Pic7: Image of the bottom of assembled cable driver board.
 
+## Testing
+
+Mike Ravicz did the testing in the chamber as the sensor was needed. The testing of an earlier "simple" version remains in the project in the "testing" directory. Some attempts at noise floor measurement were made in the simplest terms looking at "dark" current noise out of the sensor using a cover on the photodiode and an HP403B RMS Volt Meter. The problem is even when the device is not "detecting" anything the photodiode is not in darkness. So a loop back fiber with a large attenuator might have made sense but it was not available. The final version was deamed to be an improvement and was put into some use.
 
 ## Future
 
