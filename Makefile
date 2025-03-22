@@ -129,17 +129,6 @@ pcb3:   sch2pcb3
 bom:
 	$(BOMTOOL) $(BOMFLAGS) $(PCBS)
 
-alberta:
-	mv $(NAME)-art.frontsilk.gbr cslk.gbr
-	mv $(NAME)-art.front.gbr compont.gbr
-	mv $(NAME)-art.frontmask.gbr cmsk.gbr
-	mv $(NAME)-art.back.gbr solder.gbr
-	mv $(NAME)-art.backmask.gbr smsk.gbr
-	mv $(NAME)-art.plated-drill.cnc drill.cnc
-	rm $(NAME)-art.fab.gbr $(NAME)-art.frontpaste.gbr 
-	zip -jk $(NAME).zip *.gbr drill.cnc ascorder.txt READ.ME
-	echo "Do not forget to change the ascorder.txt and READ.ME"
-
 clean:
 	rm *.sch~
 	rm *.net
