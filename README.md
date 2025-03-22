@@ -86,13 +86,19 @@ Going back to Sch1 there is something worth paying attention too at the botton o
 |:-----------------
 |PCB1: This is an rendering from the gerber viewer of the opticamp-art pcb. Note the PCB heatsink and routes meant to isolate the most sensitive route near the transimpedance amplifier.
 
+This gerber view doesn't show it but I put a lot of effort into manually hacking the pcb file so that the gerber output would clear the mask around the photodiode and transimpedance amplifier. This has since been fixed with subsiquent software revisions.
+
 |<a href="cover-art.png"><img src="cover-art.png"></a>
 |:-----------------
 |PCB2: This is a rendering from the gerber viewer of the back cover.
 
+This is pretty tame stuff. It's just the larger decoupling capacitors and a sheet of copper to act like a faraday cage over the board it mates too.
+
 |<a href="photos/outputamp-art.png"><img src="photos/outputamp-art.png"></a>
 |:-----------------
 |PCB3: This is a render from the gerber viewer of the output amplifier PCB.
+
+I hope it is understood when I made the 1st version I didn't know the gain selection switch was going to be required and without funds to redo the front panel I was stuck making this layout kind of convoluted in a way I didn't like.
 
 ## Packaging and Construction
 
@@ -108,25 +114,39 @@ Pic1 shows one of the completed units front panel. The switch for more/less gain
 |:-----------------
 |Pic2: Image of the 3 PCBA inside the device facing the top side of the cable driver board.
 
+The problem of aligning everything in the chassis to the front panel and PCBAs was complicated.
+
 |<a href="photos/p1010519_25748068211_o.jpg"><img src="photos/p1010519_25748068211_o.jpg"></a>
 |:-----------------
 |Pic3: Image of the 3 PCBA inside the device facing the bottom side of the cable driver board.
+
+The connectors used to build the faraday cage on the opticamp and back cover so that they were have a gap even when fully mated so tooling could be used to carefully and evenly wedge it open if needed.
 
 |<a href="photos/p1010516_25815803575_o.jpg"><img src="photos/p1010516_25815803575_o.jpg"></a>
 |:-----------------
 |Pic4: Image of the back of the opticamp-art board. The front just has the photodiode and LED on it in their ST mount packages. Note the leads on the LED were left long for testing and trimmed later.
 
+It's worth pointing out that the soldering must be done with washable flux solder. The PCB was washed carefully with the sensors capped. There are rubber caps used on the LED's during shipping and two of those were applied during the cleaning process.
+
+This is how the TIA (TransImpedance Amplifier) looks so clean.
+
 |<a href="photos/p1010511_25515124970_o.jpg"><img src="photos/p1010511_25515124970_o.jpg"></a>
 |:-----------------
 |Pic5: Image of the rear cover removed showing how the connectors on the side form a shield.
+
+I just wanted to show that it does detach for completeness.
 
 |<a href="photos/p1010509_25815802385_o.jpg"><img src="photos/p1010509_25815802385_o.jpg"></a>
 |:-----------------
 |Pic6: Image of the top of the cable driver board.
 
+The output amp board also was build using washable flux solder.
+
 |<a href="photos/p1010523_25542472690_o.jpg"><img src="photos/p1010523_25542472690_o.jpg"></a>
 |:-----------------
 |Pic7: Image of the bottom of assembled cable driver board.
+
+I wish I had a better photo of this. C27, C28, and C29 were tuned after the photo. They were left open by request of the PI initially.
 
 ## Testing
 
